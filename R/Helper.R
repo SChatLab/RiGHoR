@@ -107,3 +107,12 @@ perGene.Mckean <- function(expr, formula, regData){
                        Pval = pval)
   return(est.df)
 }
+
+#### Normalizing using TMM (edgeR) ####
+
+tmm_norm <- function(features, metadata){
+  norm.y <- DGEList(features)
+  norm.y <- edgeR::calcNormFactors(norm.y, method = "TMM")
+  norm.y <- as.data.frame(edgeR::cpm(norm.y, log = FALSE))
+  return(norm.y)
+}
