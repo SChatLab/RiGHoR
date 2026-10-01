@@ -1,9 +1,11 @@
-Package: Ronseq
-Title: What the Package Does (One Line, Title Case)
+Package: RiGHoR
+Title: A Robust Statistical Framework for Detecting Celltype-specific gene expression alteration in Multi-sample Single-cell Studies
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person("Suvo", "Chatterjee", , "suvchat@iu.edu", role = c("aut", "cre")),
+    person("Siddhant", "Meshram", , "sidmeshr@iu.edu", role = c("aut")))
+Description: RiGHoR is a semiparametric rank-regression framework for robust celltype-specific differential expression analysis in multi-sample single-cell and single-nucleus RNA-sequencing data.
+Imports: data.table, foreach, doParallel, readr, dplyr, peakRAM, Rfit, tidyr, pbapply
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
