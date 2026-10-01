@@ -5,7 +5,7 @@ fit.RiGHoR <- function(features,
                        expVar = 'Exposure',
                        coVars = NULL,
                        norm.method = 'tmm',
-                       parallel = FALSE
+                       parallel = FALSE,
                        ncores = 4){
 
   #### Creating Regression Pre-requisites ####
